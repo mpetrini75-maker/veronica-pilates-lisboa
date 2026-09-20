@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2.3">
 </head>
 <body class="subpage-body">
 
@@ -22,7 +22,7 @@
         <span data-i18n="pod_announcement">New Episode 04 Available: Biomechanics & Fascial Release</span>
       </div>
       <div class="lang-switcher" aria-label="Language selector">
-        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="pt">PT</button>
         <button class="lang-btn" data-lang="it">IT</button>
@@ -93,30 +93,33 @@
             </div>
             <div class="player-controls-area">
               <span class="ep-tag" data-i18n="latest_ep_tag">LATEST EPISODE · EP. 04</span>
-              <h3 class="current-track-title" id="currentTrackTitle">From Classical Stage to Reformer Biomechanics</h3>
-              <p class="current-track-desc" id="currentTrackDesc">Veronica breaks down how ballet injury prevention translates into everyday spinal decompression and postural stamina.</p>
+              <h3 class="current-track-title" id="currentTrackTitle" data-i18n="ep4_title">From Classical Stage to Reformer Biomechanics</h3>
+              <p class="current-track-desc" id="currentTrackDesc" data-i18n="ep4_desc">Veronica breaks down how ballet injury prevention translates into everyday spinal decompression and postural stamina.</p>
               
+              <!-- Hidden HTML5 Audio Element -->
+              <audio id="realPodcastAudio" src="audio/ep04.mp3" preload="metadata"></audio>
+
               <div class="interactive-audio-bar">
                 <div class="audio-time-row">
-                  <span id="currentTimeDisplay">12:45</span>
-                  <span id="totalDurationDisplay">34:20</span>
+                  <span id="currentTimeDisplay">00:00</span>
+                  <span id="totalDurationDisplay">00:17</span>
                 </div>
                 <div class="audio-progress-track" id="audioProgressTrack">
-                  <div class="audio-progress-fill" id="audioProgressFill" style="width: 37%;"></div>
+                  <div class="audio-progress-fill" id="audioProgressFill" style="width: 0%;"></div>
                 </div>
               </div>
 
               <div class="player-buttons-row">
-                <button class="player-btn-sub" id="btnRewind" title="Rewind 15s">
+                <button class="player-btn-sub" id="btnRewind" title="Rewind 5s">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/></svg>
                 </button>
-                <button class="player-btn-main" id="btnPlayMaster">
+                <button class="player-btn-main" id="btnPlayMaster" aria-label="Play/Pause">
                   <svg id="playIcon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                 </button>
-                <button class="player-btn-sub" id="btnForward" title="Forward 30s">
+                <button class="player-btn-sub" id="btnForward" title="Forward 5s">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 17l5-5-5-5M6 17l5-5-5-5"/></svg>
                 </button>
-                <div class="player-speed-badge" id="speedBadge">1.0x</div>
+                <div class="player-speed-badge" id="speedBadge" style="cursor:pointer;" title="Change Playback Speed">1.0x</div>
               </div>
             </div>
           </div>
@@ -135,85 +138,85 @@
 
         <div class="episodes-grid">
           <!-- Episode 04 -->
-          <article class="episode-card active-ep" data-track="Ep. 04: From Classical Stage to Reformer Biomechanics" data-desc="Veronica breaks down how ballet injury prevention translates into everyday spinal decompression." data-duration="34:20">
+          <article class="episode-card active-ep" data-file="audio/ep04.mp3" data-i18n-track="ep4_title" data-i18n-desc="ep4_desc">
             <div class="ep-num">04</div>
             <div class="ep-content">
               <div class="ep-meta">
-                <span class="ep-date">Sep 15, 2026</span>
-                <span class="ep-length">34 MIN</span>
-                <span class="ep-category">Biomechanics & Dance</span>
+                <span class="ep-date" data-i18n="ep4_date">Sep 15, 2026</span>
+                <span class="ep-length" data-i18n="ep4_length">0:17 AUDIO CLIP</span>
+                <span class="ep-category" data-i18n="ep4_category">Biomechanics & Dance</span>
               </div>
-              <h3 class="ep-title">From Classical Stage to Reformer Biomechanics</h3>
-              <p class="ep-summary">How strict stage training at Hamburg Ballet Academy revealed the missing links in traditional fitness, and why the STOTT carriage changes everything.</p>
+              <h3 class="ep-title" data-i18n="ep4_title">From Classical Stage to Reformer Biomechanics</h3>
+              <p class="ep-summary" data-i18n="ep4_summary">How strict stage training at Hamburg Ballet Academy revealed the missing links in traditional fitness, and why the STOTT carriage changes everything.</p>
               <div class="ep-actions">
                 <button class="btn-play-inline play-this-ep">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                  <span>Play Episode</span>
+                  <span data-i18n="btn_play_ep">Play Episode</span>
                 </button>
-                <a href="#transcript-04" class="ep-link-text">Read Show Notes ↓</a>
+                <span class="ep-link-text" data-i18n="notes_ready">Audio Sample Ready</span>
               </div>
             </div>
           </article>
 
           <!-- Episode 03 -->
-          <article class="episode-card" data-track="Ep. 03: The Lisbon Tech Spine — Deconstructing Forward Head Posture" data-desc="A pragmatic breakdown of cervical spine strain from laptop work and the 3 reformer cues that reverse it." data-duration="28:15">
+          <article class="episode-card" data-file="audio/ep03.mp3" data-i18n-track="ep3_title" data-i18n-desc="ep3_desc">
             <div class="ep-num">03</div>
             <div class="ep-content">
               <div class="ep-meta">
-                <span class="ep-date">Sep 01, 2026</span>
-                <span class="ep-length">28 MIN</span>
-                <span class="ep-category">Postural Rehab</span>
+                <span class="ep-date" data-i18n="ep3_date">Sep 01, 2026</span>
+                <span class="ep-length" data-i18n="ep3_length">0:16 AUDIO CLIP</span>
+                <span class="ep-category" data-i18n="ep3_category">Postural Rehab</span>
               </div>
-              <h3 class="ep-title">The Lisbon Tech Spine: Deconstructing Forward Head Posture</h3>
-              <p class="ep-summary">For expats and remote executives in Lisbon: why stretching your tight traps makes neck tension worse, and how deep cervical flexor activation solves the root cause.</p>
+              <h3 class="ep-title" data-i18n="ep3_title">The Lisbon Tech Spine: Deconstructing Forward Head Posture</h3>
+              <p class="ep-summary" data-i18n="ep3_summary">For expats and remote executives in Lisbon: why stretching your tight traps makes neck tension worse, and how deep cervical flexor activation solves the root cause.</p>
               <div class="ep-actions">
                 <button class="btn-play-inline play-this-ep">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                  <span>Play Episode</span>
+                  <span data-i18n="btn_play_ep">Play Episode</span>
                 </button>
-                <a href="#transcript-03" class="ep-link-text">Read Show Notes ↓</a>
+                <span class="ep-link-text" data-i18n="notes_ready">Audio Sample Ready</span>
               </div>
             </div>
           </article>
 
           <!-- Episode 02 -->
-          <article class="episode-card" data-track="Ep. 02: Neuromuscular Control vs. Brute Muscle Fatigue" data-desc="Why trembling during low-load Reformer work produces superior joint longevity and athletic grace." data-duration="31:40">
+          <article class="episode-card" data-file="audio/ep02.mp3" data-i18n-track="ep2_title" data-i18n-desc="ep2_desc">
             <div class="ep-num">02</div>
             <div class="ep-content">
               <div class="ep-meta">
-                <span class="ep-date">Aug 18, 2026</span>
-                <span class="ep-length">31 MIN</span>
-                <span class="ep-category">Motor Control</span>
+                <span class="ep-date" data-i18n="ep2_date">Aug 18, 2026</span>
+                <span class="ep-length" data-i18n="ep2_length">0:13 AUDIO CLIP</span>
+                <span class="ep-category" data-i18n="ep2_category">Motor Control</span>
               </div>
-              <h3 class="ep-title">Neuromuscular Control vs. Brute Muscle Fatigue</h3>
-              <p class="ep-summary">Understanding the difference between exhaustion and neurological recruitment. Why Stott spring tensions stimulate deep stabilizer firing without taxing damaged cartilage.</p>
+              <h3 class="ep-title" data-i18n="ep2_title">Neuromuscular Control vs. Brute Muscle Fatigue</h3>
+              <p class="ep-summary" data-i18n="ep2_summary">Understanding the difference between exhaustion and neurological recruitment. Why Stott spring tensions stimulate deep stabilizer firing without taxing damaged cartilage.</p>
               <div class="ep-actions">
                 <button class="btn-play-inline play-this-ep">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                  <span>Play Episode</span>
+                  <span data-i18n="btn_play_ep">Play Episode</span>
                 </button>
-                <a href="#transcript-02" class="ep-link-text">Read Show Notes ↓</a>
+                <span class="ep-link-text" data-i18n="notes_ready">Audio Sample Ready</span>
               </div>
             </div>
           </article>
 
           <!-- Episode 01 -->
-          <article class="episode-card" data-track="Ep. 01: The Lisbon Studio Story & Classical Origins" data-desc="Veronica's journey from Italy to Berlin stages and establishing high-precision Reformer in Portugal." data-duration="24:10">
+          <article class="episode-card" data-file="audio/ep01.mp3" data-i18n-track="ep1_title" data-i18n-desc="ep1_desc">
             <div class="ep-num">01</div>
             <div class="ep-content">
               <div class="ep-meta">
-                <span class="ep-date">Aug 04, 2026</span>
-                <span class="ep-length">24 MIN</span>
-                <span class="ep-category">Origins</span>
+                <span class="ep-date" data-i18n="ep1_date">Aug 04, 2026</span>
+                <span class="ep-length" data-i18n="ep1_length">0:14 AUDIO CLIP</span>
+                <span class="ep-category" data-i18n="ep1_category">Origins</span>
               </div>
-              <h3 class="ep-title">The Lisbon Studio Story & Classical Origins</h3>
-              <p class="ep-summary">A personal introduction to Veronica Sala, the training rigor at Berlin Friedrichstadt-Palast, and the vision for bespoke private instruction at Prescription Pilates.</p>
+              <h3 class="ep-title" data-i18n="ep1_title">The Lisbon Studio Story & Classical Origins</h3>
+              <p class="ep-summary" data-i18n="ep1_summary">A personal introduction to Veronica Sala, the training rigor at Berlin Friedrichstadt-Palast, and the vision for bespoke private instruction at Prescription Pilates.</p>
               <div class="ep-actions">
                 <button class="btn-play-inline play-this-ep">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                  <span>Play Episode</span>
+                  <span data-i18n="btn_play_ep">Play Episode</span>
                 </button>
-                <a href="#transcript-01" class="ep-link-text">Read Show Notes ↓</a>
+                <span class="ep-link-text" data-i18n="notes_ready">Audio Sample Ready</span>
               </div>
             </div>
           </article>
@@ -228,8 +231,8 @@
         <h2 class="section-title" data-i18n="pod_suggest_title">Are you a Movement Specialist or Expat in Lisbon?</h2>
         <p class="section-subtitle" data-i18n="pod_suggest_sub">We regularly host osteopaths, dance masters, orthopedic surgeons, and movement athletes.</p>
         <div class="cta-btns-inline">
-          <a href="https://wa.me/351912345678?text=Hello%20Veronica,%20I%20would%20like%20to%20suggest%20a%20topic%20or%20guest%20for%20The%20Mind%20%26%20Movement%20Podcast." target="_blank" class="btn btn-primary">Propose a Topic via WhatsApp</a>
-          <a href="index.html#booking-funnel" class="btn btn-outline">Book Private Studio Session</a>
+          <a href="https://wa.me/351912345678?text=Hello%20Veronica,%20I%20would%20like%20to%20suggest%20a%20topic%20or%20guest%20for%20The%20Mind%20%26%20Movement%20Podcast." target="_blank" class="btn btn-primary" data-i18n="btn_propose_wa">Propose a Topic via WhatsApp</a>
+          <a href="index.html#booking-funnel" class="btn btn-outline" data-i18n="btn_book_studio">Book Private Studio Session</a>
         </div>
       </div>
     </section>
@@ -242,92 +245,153 @@
         <div class="footer-brand">
           <span class="logo-title">VERONICA SALA</span>
           <span class="logo-subtitle">PILATES & MOVEMENT</span>
-          <p class="footer-bio">STOTT Pilates® Certified Instructor & Former European Classical Dancer. High-precision private instruction in Lisbon.</p>
+          <p class="footer-bio" data-i18n="footer_bio">STOTT Pilates® Certified Instructor & Former European Classical Dancer. High-precision private instruction in Lisbon.</p>
         </div>
         <div class="footer-links">
-          <h4>Navigation</h4>
+          <h4 data-i18n="foot_title_nav">Navigation</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="podcast.html">Podcast</a></li>
-            <li><a href="shop.html">Gear & Essentials</a></li>
-            <li><a href="collaborazioni.html">Partnerships & Privileges</a></li>
+            <li><a href="index.html" data-i18n="crumb_home">Home</a></li>
+            <li><a href="podcast.html" data-i18n="nav_podcast">Podcast</a></li>
+            <li><a href="shop.html" data-i18n="nav_shop">Gear & Essentials</a></li>
+            <li><a href="collaborazioni.html" data-i18n="nav_collab">Partnerships & Privileges</a></li>
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Lisbon Studio</h4>
-          <p class="footer-contact-item"><strong>Studio:</strong> Prescription Pilates Lisbon</p>
-          <p class="footer-contact-item"><strong>Languages:</strong> IT · EN · DE · PT</p>
+          <h4 data-i18n="foot_title_studio">Lisbon Studio</h4>
+          <p class="footer-contact-item"><strong data-i18n="foot_studio_lbl">Studio:</strong> Prescription Pilates Lisbon</p>
+          <p class="footer-contact-item"><strong data-i18n="foot_langs_lbl">Languages:</strong> IT · EN · DE · PT</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Veronica Sala. All rights reserved.</p>
+        <p data-i18n="footer_copy">© 2026 Veronica Sala. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2.3"></script>
   <script>
-    // Subpage Audio Player Interactive Demo Logic
+    // Real Audio Player Controller
     document.addEventListener('DOMContentLoaded', () => {
-      let isPlaying = false;
+      const audio = document.getElementById('realPodcastAudio');
       const playBtn = document.getElementById('btnPlayMaster');
       const playIcon = document.getElementById('playIcon');
       const progressFill = document.getElementById('audioProgressFill');
+      const progressTrack = document.getElementById('audioProgressTrack');
+      const currentTimeDisp = document.getElementById('currentTimeDisplay');
+      const totalDurationDisp = document.getElementById('totalDurationDisplay');
       const trackTitle = document.getElementById('currentTrackTitle');
       const trackDesc = document.getElementById('currentTrackDesc');
-      const currentTime = document.getElementById('currentTimeDisplay');
-      const totalTime = document.getElementById('totalDurationDisplay');
-      let progress = 37;
-      let interval = null;
+      const rewindBtn = document.getElementById('btnRewind');
+      const fwdBtn = document.getElementById('btnForward');
+      const speedBadge = document.getElementById('speedBadge');
 
-      function togglePlay(play) {
-        if (play !== undefined) isPlaying = play;
-        else isPlaying = !isPlaying;
+      function formatTime(s) {
+        const mins = Math.floor(s / 60);
+        const secs = Math.floor(s % 60);
+        return String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+      }
 
+      function updatePlayIcon(isPlaying) {
         if (isPlaying) {
           playIcon.innerHTML = '<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>';
-          if (!interval) {
-            interval = setInterval(() => {
-              progress = (progress + 0.5) % 100;
-              progressFill.style.width = progress + '%';
-            }, 1000);
-          }
         } else {
           playIcon.innerHTML = '<polygon points="5 3 19 12 5 21 5 3"/>';
-          clearInterval(interval);
-          interval = null;
         }
       }
 
-      if (playBtn) playBtn.addEventListener('click', () => togglePlay());
+      if (playBtn && audio) {
+        playBtn.addEventListener('click', () => {
+          if (audio.paused) {
+            audio.play().catch(e => console.log('Audio autoplay prevented:', e));
+          } else {
+            audio.pause();
+          }
+        });
 
-      const epCards = document.querySelectorAll('.episode-card');
-      epCards.forEach(card => {
-        const btn = card.querySelector('.play-this-ep');
-        if (btn) {
-          btn.addEventListener('click', () => {
-            epCards.forEach(c => c.classList.remove('active-ep'));
-            card.classList.add('active-ep');
-            trackTitle.textContent = card.getAttribute('data-track');
-            trackDesc.textContent = card.getAttribute('data-desc');
-            totalTime.textContent = card.getAttribute('data-duration');
-            progress = 0;
-            progressFill.style.width = '0%';
-            currentTime.textContent = '00:00';
-            togglePlay(true);
-          });
-        }
-      });
+        audio.addEventListener('play', () => updatePlayIcon(true));
+        audio.addEventListener('pause', () => updatePlayIcon(false));
+        audio.addEventListener('ended', () => {
+          updatePlayIcon(false);
+          progressFill.style.width = '0%';
+          currentTimeDisp.textContent = '00:00';
+        });
 
-      const progressTrack = document.getElementById('audioProgressTrack');
-      if (progressTrack) {
+        audio.addEventListener('timeupdate', () => {
+          if (audio.duration) {
+            const pct = (audio.currentTime / audio.duration) * 100;
+            progressFill.style.width = pct + '%';
+            currentTimeDisp.textContent = formatTime(audio.currentTime);
+          }
+        });
+
+        audio.addEventListener('loadedmetadata', () => {
+          totalDurationDisp.textContent = formatTime(audio.duration);
+        });
+      }
+
+      if (progressTrack && audio) {
         progressTrack.addEventListener('click', (e) => {
           const rect = progressTrack.getBoundingClientRect();
           const clickX = e.clientX - rect.left;
-          progress = Math.max(0, Math.min(100, (clickX / rect.width) * 100));
-          progressFill.style.width = progress + '%';
+          const pct = Math.max(0, Math.min(1, clickX / rect.width));
+          if (audio.duration) {
+            audio.currentTime = pct * audio.duration;
+          }
         });
       }
+
+      if (rewindBtn && audio) {
+        rewindBtn.addEventListener('click', () => {
+          audio.currentTime = Math.max(0, audio.currentTime - 5);
+        });
+      }
+
+      if (fwdBtn && audio) {
+        fwdBtn.addEventListener('click', () => {
+          audio.currentTime = Math.min(audio.duration || 100, audio.currentTime + 5);
+        });
+      }
+
+      const speeds = [1.0, 1.25, 1.5, 0.75];
+      let speedIdx = 0;
+      if (speedBadge && audio) {
+        speedBadge.addEventListener('click', () => {
+          speedIdx = (speedIdx + 1) % speeds.length;
+          const spd = speeds[speedIdx];
+          audio.playbackRate = spd;
+          speedBadge.textContent = spd.toFixed(2).replace(/.00$/, '.0') + 'x';
+        });
+      }
+
+      // Episode selection click
+      const epCards = document.querySelectorAll('.episode-card');
+      epCards.forEach(card => {
+        const btn = card.querySelector('.play-this-ep');
+        const triggerPlay = () => {
+          epCards.forEach(c => c.classList.remove('active-ep'));
+          card.classList.add('active-ep');
+          const file = card.getAttribute('data-file');
+          const tKey = card.getAttribute('data-i18n-track');
+          const dKey = card.getAttribute('data-i18n-desc');
+          
+          if (trackTitle && tKey) {
+            trackTitle.setAttribute('data-i18n', tKey);
+            trackTitle.textContent = (window.i18n && window.i18n[window.currentLang] && window.i18n[window.currentLang][tKey]) || card.querySelector('.ep-title').textContent;
+          }
+          if (trackDesc && dKey) {
+            trackDesc.setAttribute('data-i18n', dKey);
+            trackDesc.textContent = (window.i18n && window.i18n[window.currentLang] && window.i18n[window.currentLang][dKey]) || card.querySelector('.ep-summary').textContent;
+          }
+
+          if (audio && file) {
+            audio.src = file;
+            audio.play().catch(e => console.log('Playback error:', e));
+          }
+        };
+
+        if (btn) btn.addEventListener('click', (e) => { e.stopPropagation(); triggerPlay(); });
+        card.addEventListener('click', () => triggerPlay());
+      });
     });
   </script>
 </body>
