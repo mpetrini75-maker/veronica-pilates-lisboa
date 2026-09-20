@@ -5,6 +5,21 @@
 
 const i18n = {
   "it": {
+    "lbl_notes": "Le Tue Esigenze / Disponibilità Oraria",
+    "opt_studio": "Corsi di Gruppo a Prescription",
+    "opt_trial": "Valutazione Posturale Iniziale & Lezione Prova",
+    "opt_duet": "Sessione Duet (2 Persone)",
+    "opt_private": "Sessione Privata 1:1 Matwork & Reformer",
+    "lbl_interest": "Servizio di Interesse",
+    "lbl_phone": "Numero WhatsApp / Telefono",
+    "lbl_email": "Email per Invito Calendario",
+    "lbl_name": "Il Tuo Nome e Cognome",
+    "cal_badge_note": "Disponibilità in Tempo Reale nello Studio di Lisbona e a Domicilio",
+    "ch_2_desc": "Italiano, Tedesco (Deutsch), Inglese (English), Portoghese (Português)",
+    "ch_2_title": "Lingue Parlate",
+    "contact_p": "Pronto a sperimentare la precisione di un'ex ballerina professionista europea? Seleziona l'orario ideale sul calendario interattivo o invia un messaggio WhatsApp diretto.",
+    "contact_title": "Inizia la Tua Trasformazione Posturale",
+    "contact_tag": "RICHIESTE DIRETTE & PRENOTAZIONE ISTANTANEA",
     "swipe_hint": "Scorri le schede orizzontalmente",
     "mob_home": "Home",
     "mob_book": "Prenota",
