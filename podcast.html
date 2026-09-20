@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css?v=2.3">
+  <link rel="stylesheet" href="style.css?v=3.0">
 </head>
 <body class="subpage-body">
 
@@ -92,12 +92,13 @@
               </div>
             </div>
             <div class="player-controls-area">
+              <div class="audio-ambient-flag"><span class="pulse-dot"></span> <span data-i18n="audio_ambient_flag">Studio Ambient Preview</span></div>
               <span class="ep-tag" data-i18n="latest_ep_tag">LATEST EPISODE · EP. 04</span>
               <h3 class="current-track-title" id="currentTrackTitle" data-i18n="ep4_title">From Classical Stage to Reformer Biomechanics</h3>
               <p class="current-track-desc" id="currentTrackDesc" data-i18n="ep4_desc">Veronica breaks down how ballet injury prevention translates into everyday spinal decompression and postural stamina.</p>
               
               <!-- Hidden HTML5 Audio Element -->
-              <audio id="realPodcastAudio" src="audio/ep04.mp3" preload="metadata"></audio>
+              <audio id="realPodcastAudio" src="audio/preview_soundscape_04.mp3?v=3.0" preload="metadata"></audio>
 
               <div class="interactive-audio-bar">
                 <div class="audio-time-row">
@@ -138,7 +139,7 @@
 
         <div class="episodes-grid">
           <!-- Episode 04 -->
-          <article class="episode-card active-ep" data-file="audio/ep04.mp3" data-i18n-track="ep4_title" data-i18n-desc="ep4_desc">
+          <article class="episode-card active-ep" data-file="audio/preview_soundscape_04.mp3?v=3.0" data-i18n-track="ep4_title" data-i18n-desc="ep4_desc">
             <div class="ep-num">04</div>
             <div class="ep-content">
               <div class="ep-meta">
@@ -159,7 +160,7 @@
           </article>
 
           <!-- Episode 03 -->
-          <article class="episode-card" data-file="audio/ep03.mp3" data-i18n-track="ep3_title" data-i18n-desc="ep3_desc">
+          <article class="episode-card" data-file="audio/preview_soundscape_03.mp3?v=3.0" data-i18n-track="ep3_title" data-i18n-desc="ep3_desc">
             <div class="ep-num">03</div>
             <div class="ep-content">
               <div class="ep-meta">
@@ -180,7 +181,7 @@
           </article>
 
           <!-- Episode 02 -->
-          <article class="episode-card" data-file="audio/ep02.mp3" data-i18n-track="ep2_title" data-i18n-desc="ep2_desc">
+          <article class="episode-card" data-file="audio/preview_soundscape_02.mp3?v=3.0" data-i18n-track="ep2_title" data-i18n-desc="ep2_desc">
             <div class="ep-num">02</div>
             <div class="ep-content">
               <div class="ep-meta">
@@ -201,7 +202,7 @@
           </article>
 
           <!-- Episode 01 -->
-          <article class="episode-card" data-file="audio/ep01.mp3" data-i18n-track="ep1_title" data-i18n-desc="ep1_desc">
+          <article class="episode-card" data-file="audio/preview_soundscape_01.mp3?v=3.0" data-i18n-track="ep1_title" data-i18n-desc="ep1_desc">
             <div class="ep-num">01</div>
             <div class="ep-content">
               <div class="ep-meta">
@@ -268,7 +269,7 @@
     </div>
   </footer>
 
-  <script src="app.js?v=2.3"></script>
+  <script src="app.js?v=3.0"></script>
   <script>
     // Real Audio Player Controller
     document.addEventListener('DOMContentLoaded', () => {

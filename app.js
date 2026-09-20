@@ -5,6 +5,7 @@
 
 const i18n = {
   "it": {
+    "audio_ambient_flag": "Anteprima Sottofondo Studio (In attesa della registrazione vocale di Veronica)",
     // Navigation & Common
     "announcement_text": "Aperte le prenotazioni per le sessioni private a Lisbona (Matwork, Reformer e a Domicilio)",
     "nav_about": "Chi Sono",
@@ -349,6 +350,7 @@ const i18n = {
   },
 
   "en": {
+    "audio_ambient_flag": "Studio Ambient Preview (Veronica voice masterclass recording soon)",
     // Navigation & Common
     "announcement_text": "Now Booking Autumn Private Sessions in Lisbon (Matwork, Reformer & In-Home)",
     "nav_about": "About",
@@ -693,6 +695,7 @@ const i18n = {
   },
 
   "de": {
+    "audio_ambient_flag": "Studio-Ambient Vorschau (Veronicas Sprachaufnahme folgt in Kürze)",
     // Navigation & Common
     "announcement_text": "Jetzt buchbar: Herbst-Privatlektionen in Lissabon (Matwork, Reformer & Hausbesuche)",
     "nav_about": "Über mich",
@@ -891,6 +894,7 @@ const i18n = {
   },
 
   "pt": {
+    "audio_ambient_flag": "Amostra Ambiente de Estúdio (Gravação de voz da Veronica em breve)",
     // Navigation & Common
     "announcement_text": "Inscrições abertas para sessões privadas em Lisboa (Matwork, Reformer e ao Domicílio)",
     "nav_about": "Sobre Mim",
