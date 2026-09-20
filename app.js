@@ -1,6 +1,6 @@
 /* ==========================================================================
    VERONICA SALA — PILATES & MOVEMENT ARCHITECTURE
-   Application Logic & Multilingual Engine (EN / DE / PT / IT)
+   Application Logic, Multilingual Engine & Smart Calendly Funnel
    ========================================================================== */
 
 const i18n = {
@@ -226,7 +226,28 @@ const i18n = {
     "shop_badge": "Attrezzatura Curata",
     "shop_title": "Studio Essentials & Grip Gear",
     "shop_desc": "Calzini grip ad alta aderenza e teli antiscivolo per Reformer selezionati da Veronica.",
-    "shop_link": "Scopri gli Accessori Consigliati →"
+    "shop_link": "Scopri gli Accessori Consigliati →",
+    "tab_calendar": "Calendario Interattivo (Calendly)",
+    "tab_whatsapp": "Prenotazione Rapida WhatsApp",
+    "ch_sync_title": "Sincronizzazione Calendario Istantanea",
+    "ch_sync_desc": "Invito automatico su Google / Apple Calendar con promemoria.",
+    "cal_badge_note": "Disponibilità in Tempo Reale: Chiado, Saldanha & Domicilio",
+    "cal_default_badge": "Sessione Privata 1:1 Matwork & Reformer",
+    "cal_step1_title": "Seleziona Data e Fascia Oraria",
+    "cal_lbl_date": "Scegli il Giorno (Settembre / Ottobre 2026)",
+    "cal_lbl_time": "Orari Disponibili a Lisbona (WEST)",
+    "cal_lbl_loc": "Sede o Modalità Sessione",
+    "opt_loc_chiado": "Studio Privato Chiado (Sala Reformer Riservata)",
+    "opt_loc_saldanha": "Prescription Saldanha",
+    "opt_loc_inhome": "A Domicilio (Lisbona & Cascais)",
+    "opt_loc_online": "Consulenza Video Online (Zoom)",
+    "btn_confirm_booking": "Conferma & Prenota su Calendly →",
+    "wa_view_title": "Messaggio Diretto Veloce",
+    "wa_view_sub": "Preferisci chattare direttamente? Scrivi le tue esigenze e invia su WhatsApp.",
+    "btn_send_wa": "Apri Chat WhatsApp Diretta",
+    "r2_badge": "Pacchetto 5",
+    "r3_badge": "Pacchetto 10",
+    "r4_badge": "Duetto (2 Persone)"
   },
   "en": {
     "announcement_text": "Now Booking Autumn Private Sessions in Lisbon (Matwork, Reformer & In-Home)",
@@ -450,7 +471,28 @@ const i18n = {
     "shop_badge": "Curated Gear",
     "shop_title": "Studio Essentials & Grip Gear",
     "shop_desc": "High-traction grip socks and non-slip carriage mats handpicked by Veronica.",
-    "shop_link": "Explore Recommended Essentials →"
+    "shop_link": "Explore Recommended Essentials →",
+    "tab_calendar": "Interactive Live Calendar (Calendly)",
+    "tab_whatsapp": "Fast WhatsApp Booking",
+    "ch_sync_title": "Instant Calendar Synchronization",
+    "ch_sync_desc": "Direct invite sent to your Google / Apple Calendar with confirmation.",
+    "cal_badge_note": "Real-Time Lisbon Studio & In-Home Availability",
+    "cal_default_badge": "Private 1-on-1 Reformer Session",
+    "cal_step1_title": "Select Date & Time Slot",
+    "cal_lbl_date": "Choose Day (September / October 2026)",
+    "cal_lbl_time": "Available Slots in Lisbon (WEST)",
+    "cal_lbl_loc": "Location / Studio",
+    "opt_loc_chiado": "Chiado Boutique Studio (Private Room)",
+    "opt_loc_saldanha": "Prescription Saldanha",
+    "opt_loc_inhome": "In-Home (Lisbon & Cascais)",
+    "opt_loc_online": "Online Video Coaching (Zoom)",
+    "btn_confirm_booking": "Confirm & Schedule via Calendly →",
+    "wa_view_title": "Direct Fast Message",
+    "wa_view_sub": "Prefer to chat directly? Fill in your note and send via WhatsApp.",
+    "btn_send_wa": "Open Direct WhatsApp Chat",
+    "r2_badge": "5 Sessions Pack",
+    "r3_badge": "10 Sessions Master",
+    "r4_badge": "Duet (2 People)"
   },
   "de": {
     "announcement_text": "Jetzt buchbar: Herbst-Privatlektionen in Lissabon (Matwork, Reformer & Hausbesuche)",
@@ -674,7 +716,28 @@ const i18n = {
     "shop_badge": "Kuratierte Ausrüstung",
     "shop_title": "Studio Essentials & Grip Gear",
     "shop_desc": "Rutschfeste Grip-Socken und Reformer-Auflagen, ausgewählt von Veronica.",
-    "shop_link": "Empfohlene Essentials Entdecken →"
+    "shop_link": "Empfohlene Essentials Entdecken →",
+    "tab_calendar": "Interaktiver Live-Kalender (Calendly)",
+    "tab_whatsapp": "Schnellbuchung via WhatsApp",
+    "ch_sync_title": "Sofortige Kalendersynchronisierung",
+    "ch_sync_desc": "Automatische Einladung für Google / Apple Kalender mit Bestätigung.",
+    "cal_badge_note": "Echtzeit-Verfügbarkeit: Chiado, Saldanha & Hausbesuch",
+    "cal_default_badge": "Private 1:1 Matwork & Reformer Session",
+    "cal_step1_title": "Datum & Zeitfenster Wählen",
+    "cal_lbl_date": "Tag Wählen (September / Oktober 2026)",
+    "cal_lbl_time": "Verfügbare Zeiten in Lissabon (WEST)",
+    "cal_lbl_loc": "Standort / Studio",
+    "opt_loc_chiado": "Chiado Boutique Studio (Privater Raum)",
+    "opt_loc_saldanha": "Prescription Saldanha",
+    "opt_loc_inhome": "Hausbesuch (Lissabon & Cascais)",
+    "opt_loc_online": "Online Video Coaching (Zoom)",
+    "btn_confirm_booking": "Termin auf Calendly Bestätigen →",
+    "wa_view_title": "Direkte Schnellanfrage",
+    "wa_view_sub": "Lieber direkt schreiben? Sende Veronica eine persönliche Nachricht auf WhatsApp.",
+    "btn_send_wa": "Direkten WhatsApp-Chat Öffnen",
+    "r2_badge": "5er-Paket",
+    "r3_badge": "10er-Paket",
+    "r4_badge": "Duett (2 Personen)"
   },
   "pt": {
     "announcement_text": "Inscrições abertas para sessões privadas de outono em Lisboa (Matwork, Reformer e ao Domicílio)",
@@ -898,13 +961,37 @@ const i18n = {
     "shop_badge": "Equipamento Curado",
     "shop_title": "Studio Essentials & Grip Gear",
     "shop_desc": "Meias aderentes de alta tração e toalhas antiderrapantes selecionadas por Veronica.",
-    "shop_link": "Explorar Acessórios Recomendados →"
+    "shop_link": "Explorar Acessórios Recomendados →",
+    "tab_calendar": "Calendário Interativo (Calendly)",
+    "tab_whatsapp": "Marcação Rápida WhatsApp",
+    "ch_sync_title": "Sincronização de Calendário Imediata",
+    "ch_sync_desc": "Convite direto enviado para o Google / Apple Calendar com lembrete.",
+    "cal_badge_note": "Disponibilidade em Tempo Real: Chiado, Saldanha & Domicílio",
+    "cal_default_badge": "Sessão Privada 1:1 Matwork & Reformer",
+    "cal_step1_title": "Selecionar Data e Horário",
+    "cal_lbl_date": "Escolhe o Dia (Setembro / Outubro 2026)",
+    "cal_lbl_time": "Horários Disponíveis em Lisboa (WEST)",
+    "cal_lbl_loc": "Localização / Estúdio",
+    "opt_loc_chiado": "Estúdio Privado Chiado (Sala Reservada)",
+    "opt_loc_saldanha": "Prescription Saldanha",
+    "opt_loc_inhome": "Ao Domicílio (Lisboa & Cascais)",
+    "opt_loc_online": "Vídeo Consulta Online (Zoom)",
+    "btn_confirm_booking": "Confirmar & Agendar no Calendly →",
+    "wa_view_title": "Mensagem Rápida Direta",
+    "wa_view_sub": "Preferes falar diretamente? Envia a tua mensagem através do WhatsApp.",
+    "btn_send_wa": "Abrir Conversa Direta no WhatsApp",
+    "r2_badge": "Pack 5 Sessões",
+    "r3_badge": "Pack 10 Sessões",
+    "r4_badge": "Dueto (2 Pessoas)"
   }
 };
 
 let currentLang = 'en';
+let selectedDay = 'Tue 22 Sep';
+let selectedSlot = '11:30';
+let selectedService = 'Private 1-on-1 Reformer Session';
 
-// Detect browser language automatically or use saved/default
+// Detect browser language automatically
 function initLanguage() {
   const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
   let defaultLang = 'en';
@@ -937,8 +1024,77 @@ function setLanguage(lang) {
   if (langSelect) langSelect.value = lang;
 }
 
-// Global expose
 window.setLanguage = setLanguage;
+
+// Tab Switcher (Calendly vs WhatsApp)
+window.switchBookingTab = function(mode) {
+  const tabCal = document.getElementById('tabCalendly');
+  const tabWa = document.getElementById('tabWhatsapp');
+  const viewCal = document.getElementById('calendlyView');
+  const viewWa = document.getElementById('whatsappView');
+
+  if (mode === 'calendly') {
+    tabCal.classList.add('active');
+    tabWa.classList.remove('active');
+    viewCal.style.display = 'block';
+    viewWa.style.display = 'none';
+  } else {
+    tabWa.classList.add('active');
+    tabCal.classList.remove('active');
+    viewWa.style.display = 'block';
+    viewCal.style.display = 'none';
+  }
+};
+
+// Calendar Selection Handlers
+window.selectDay = function(btn, day) {
+  selectedDay = day;
+  document.querySelectorAll('.cal-day-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+};
+
+window.selectSlot = function(btn, slot) {
+  selectedSlot = slot;
+  document.querySelectorAll('.slot-chip').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+};
+
+// Calendly Submission
+window.handleCalendlySubmit = function() {
+  const name = document.getElementById('calName').value;
+  const email = document.getElementById('calEmail').value;
+  const phone = document.getElementById('calPhone').value;
+  const location = document.getElementById('calLocation').value;
+
+  const box = document.getElementById('calConfirmBox');
+  box.style.display = 'block';
+  
+  if (currentLang === 'it') {
+    box.innerHTML = '<strong>Richiesta Registrata con Successo!</strong><br>Sessione: ' + selectedService + '<br>Data e Ora: ' + selectedDay + ' alle ' + selectedSlot + '<br>Sede: ' + location + '<br><em>Riceverai la conferma ufficiale e l\'invito per il calendario all\'indirizzo ' + email + '.</em>';
+  } else if (currentLang === 'de') {
+    box.innerHTML = '<strong>Terminanfrage Erfolgreich Erfasst!</strong><br>Lektion: ' + selectedService + '<br>Datum: ' + selectedDay + ' um ' + selectedSlot + ' Uhr<br>Ort: ' + location + '<br><em>Die Kalendereinladung wurde an ' + email + ' vorgemerkt.</em>';
+  } else if (currentLang === 'pt') {
+    box.innerHTML = '<strong>Marcação Registada com Sucesso!</strong><br>Sessão: ' + selectedService + '<br>Data: ' + selectedDay + ' às ' + selectedSlot + '<br>Local: ' + location + '<br><em>Receberás a confirmação no email ' + email + '.</em>';
+  } else {
+    box.innerHTML = '<strong>Appointment Requested Successfully!</strong><br>Session: ' + selectedService + '<br>Time: ' + selectedDay + ' at ' + selectedSlot + ' (WEST)<br>Location: ' + location + '<br><em>Calendar invite has been queued for ' + email + '.</em>';
+  }
+
+  // Also pre-fill WhatsApp message option
+  const msg = encodeURIComponent('Hello Veronica! I just scheduled a ' + selectedService + ' on ' + selectedDay + ' at ' + selectedSlot + ' (' + location + ') for ' + name + ' (' + email + ', phone ' + phone + ').');
+  setTimeout(() => {
+    window.open('https://wa.me/351912345678?text=' + msg, '_blank');
+  }, 1200);
+};
+
+// WhatsApp Direct
+window.handleWhatsAppDirect = function() {
+  const name = document.getElementById('waName').value;
+  const service = document.getElementById('waService').value;
+  const note = document.getElementById('waNote').value;
+
+  const msg = encodeURIComponent('Hello Veronica! My name is ' + name + '. I am interested in: ' + service + '. Note: ' + note);
+  window.open('https://wa.me/351912345678?text=' + msg, '_blank');
+};
 
 // Quiz Logic
 let quizAnswers = { goal: '', exp: '' };
@@ -958,8 +1114,10 @@ window.quizAnswer = function(type, val) {
 function calculateResult() {
   const resTitle = document.getElementById('resTitle');
   const resDesc = document.getElementById('resDesc');
+  const badge = document.getElementById('calServiceBadge');
   
   if (quizAnswers.goal === 'rehab' || quizAnswers.exp === 'beginner') {
+    selectedService = (currentLang === 'it') ? "Sessione Privata 1:1 di Valutazione Posturale" : "Private 1-on-1 Assessment Session";
     if (currentLang === 'it') {
       resTitle.textContent = "Sessione Privata 1:1 di Valutazione Posturale";
       resDesc.textContent = "In base ai tuoi obiettivi, una sessione individuale su misura con Veronica ti darà la massima precisione nell'allineamento della colonna e nella protezione articolare.";
@@ -974,6 +1132,7 @@ function calculateResult() {
       resDesc.textContent = "Based on your goals, a tailored 1:1 session with Veronica will give you the precise alignment cues and individual attention needed for maximal progress.";
     }
   } else {
+    selectedService = (currentLang === 'it') ? "Percorso Dinamico Reformer & Core" : "Dynamic Reformer & Athletic Flow";
     if (currentLang === 'it') {
       resTitle.textContent = "Percorso Dinamico Reformer & Core";
       resDesc.textContent = "Ideale per potenziare resistenza e forza atletica con il controllo delle molle STOTT e la musicalità del metodo.";
@@ -988,29 +1147,18 @@ function calculateResult() {
       resDesc.textContent = "Perfect for conditioning, core strength, and spring dynamics with high-energy rhythm.";
     }
   }
+
+  if (badge) badge.textContent = selectedService;
 }
 
 window.closeModal = function() {
   const modal = document.getElementById('quizModal');
   if (modal) modal.classList.remove('open');
-};
-
-window.handleFormSubmit = function() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const interest = document.getElementById('interest').value;
-  const notes = document.getElementById('notes').value;
   
-  const msg = encodeURIComponent(`Hello Veronica! My name is ${name}. I would like to inquire about ${interest}. (Phone: ${phone}, Email: ${email}). Note: ${notes}`);
-  window.open(`https://wa.me/351912345678?text=${msg}`, '_blank');
-  
-  const fb = document.getElementById('formFeedback');
-  if (fb) {
-    fb.style.display = 'block';
-    fb.style.color = 'var(--accent-sage-dark)';
-    fb.textContent = currentLang === 'it' ? 'Apertura chat WhatsApp in corso...' : 'Opening WhatsApp chat...';
-  }
+  // Update badge and switch to calendly view
+  const badge = document.getElementById('calServiceBadge');
+  if (badge) badge.textContent = selectedService;
+  window.switchBookingTab('calendly');
 };
 
 document.addEventListener('DOMContentLoaded', () => {

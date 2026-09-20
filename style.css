@@ -1692,3 +1692,173 @@ input:focus, select:focus, textarea:focus {
   box-shadow: var(--shadow-md);
   color: #FFFFFF;
 }
+
+
+/* ==========================================================================
+   CALENDLY & SMART SCHEDULER STYLES
+   ========================================================================== */
+.booking-tabs {
+  display: flex;
+  gap: 12px;
+  margin: 24px 0 28px 0;
+  background-color: var(--bg-surface-elevated);
+  padding: 6px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+}
+.booking-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+.booking-tab.active {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+.booking-tab:hover:not(.active) {
+  color: var(--text-primary);
+}
+
+.calendly-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-sage-light);
+  color: var(--accent-sage-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.cal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-light);
+}
+.cal-service-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-sage-dark);
+  background-color: var(--accent-sage-light);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+.cal-duration {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-surface-soft);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+}
+
+.cal-scheduler-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+@media (max-width: 600px) {
+  .cal-scheduler-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cal-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.cal-days-row {
+  display: flex;
+  gap: 6px;
+}
+.cal-day-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 4px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+.cal-day-btn strong {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.cal-day-btn span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 2px;
+}
+.cal-day-btn.active, .cal-day-btn:hover {
+  background-color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+.cal-day-btn.active strong, .cal-day-btn.active span,
+.cal-day-btn:hover strong, .cal-day-btn:hover span {
+  color: #FFFFFF;
+}
+
+.cal-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+.slot-chip {
+  padding: 8px 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  text-align: center;
+}
+.slot-chip.active, .slot-chip:hover {
+  background-color: var(--accent-sage-dark);
+  color: #FFFFFF;
+  border-color: var(--accent-sage-dark);
+}
+
+.cal-confirmation-box {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background-color: var(--accent-sage-light);
+  border: 1px solid rgba(107, 127, 110, 0.3);
+  color: var(--accent-sage-dark);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
