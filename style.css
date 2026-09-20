@@ -1,7 +1,9 @@
 html, body {
-  overflow-x: hidden;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ==========================================================================
@@ -3756,4 +3758,109 @@ html, body {
 
 .about-card-float {
   display: none !important; /* Rimosso vecchio box absolute sovrapposto */
+}
+
+/* ==========================================================================
+   GUARANTEED FIXED MOBILE HEADER (VERONICA SALA + WHATSAPP ALWAYS ANCHORED ON TOP v10.0)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Spazio in alto per non coprire il contenuto con l'header fisso */
+  body {
+    padding-top: 56px !important;
+    padding-bottom: 74px !important; /* Spazio per la mobile bottom bar */
+  }
+
+  /* Header Inchiodato in cima allo schermo durante tutto lo scroll */
+  .site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 56px !important;
+    display: flex !important;
+    align-items: center !important;
+    z-index: 999999 !important;
+    background: rgba(253, 251, 247, 0.98) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid var(--border-medium) !important;
+    box-shadow: 0 4px 16px rgba(28, 25, 23, 0.08) !important;
+    padding: 0 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .site-header .container,
+  .site-header .header-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .brand-logo {
+    display: flex !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+  }
+
+  .logo-title {
+    font-family: var(--font-serif) !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
+    color: var(--text-primary) !important;
+    line-height: 1.05 !important;
+  }
+
+  .logo-subtitle {
+    font-size: 0.58rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.22em !important;
+    color: var(--accent-sage-dark) !important;
+    line-height: 1 !important;
+    margin-top: 2px !important;
+  }
+
+  .header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .header-actions .btn-primary {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 7px 14px !important;
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+    background-color: var(--accent-terra) !important;
+    color: #FFFFFF !important;
+    border-radius: 99px !important;
+    box-shadow: 0 2px 8px rgba(194, 116, 92, 0.3) !important;
+    text-decoration: none !important;
+  }
+
+  .header-actions .btn-primary svg {
+    width: 15px !important;
+    height: 15px !important;
+    stroke: none !important;
+    fill: currentColor !important;
+  }
+
+  /* Announcement bar su mobile rimane all'inizio pagina o integrata */
+  .announcement-bar {
+    display: none !important; /* Su mobile l'header fisso è il punto focale primario pulito */
+  }
+
+  .hero-section {
+    padding-top: 20px !important;
+  }
+  .page-hero {
+    padding-top: 24px !important;
+  }
 }
