@@ -3930,3 +3930,203 @@ html, body {
     font-size: 0.82rem !important;
   }
 }
+
+/* ==========================================================================
+   LUXURY STICKY HEADER FOR DESKTOP & MOBILE (v11.0)
+   ========================================================================== */
+.site-header {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  top: 0 !important;
+  z-index: 99999 !important;
+  background-color: rgba(250, 247, 242, 0.97) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  border-bottom: 1px solid var(--border-light) !important;
+  box-shadow: 0 4px 20px rgba(28, 25, 23, 0.05) !important;
+  padding: 14px 0 !important;
+  transition: all 0.25s ease !important;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  align-items: center;
+}
+
+.main-nav a {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 6px 2px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--text-primary);
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--accent-terra);
+  border-radius: 99px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-actions .btn-outline {
+  font-size: 0.82rem;
+  padding: 8px 16px;
+  border-radius: 99px;
+}
+
+.header-actions .btn-primary {
+  font-size: 0.82rem;
+  padding: 8px 18px;
+  border-radius: 99px;
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  box-shadow: 0 3px 12px rgba(28, 25, 23, 0.15);
+}
+
+/* ---------------- MOBILE LUXURY HEADER ---------------- */
+@media (max-width: 768px) {
+  body {
+    padding-top: 0 !important;
+    padding-bottom: 74px !important;
+  }
+
+  .announcement-bar {
+    display: block !important;
+    background-color: var(--bg-dark) !important;
+    padding: 7px 14px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .announcement-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .announcement-badge {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .lang-switcher {
+    display: flex !important;
+    gap: 3px !important;
+  }
+
+  .lang-btn {
+    padding: 2px 6px !important;
+    font-size: 0.68rem !important;
+    font-weight: 700 !important;
+    border-radius: 4px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-inverse-muted) !important;
+  }
+
+  .lang-btn.active {
+    background: #FFFFFF !important;
+    color: var(--bg-dark) !important;
+  }
+
+  .site-header {
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top: 0 !important;
+    z-index: 99999 !important;
+    padding: 10px 14px !important;
+    height: auto !important;
+    background: rgba(250, 247, 242, 0.98) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid var(--border-medium) !important;
+    box-shadow: 0 4px 16px rgba(28, 25, 23, 0.06) !important;
+  }
+
+  .header-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .brand-logo {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .logo-title {
+    font-family: var(--font-serif) !important;
+    font-size: 1.32rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.09em !important;
+    color: var(--text-primary) !important;
+    line-height: 1.05 !important;
+  }
+
+  .logo-subtitle {
+    font-family: var(--font-sans) !important;
+    font-size: 0.6rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.22em !important;
+    color: var(--accent-terra) !important;
+    line-height: 1 !important;
+    margin-top: 2px !important;
+  }
+
+  .header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .header-actions .btn-primary {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 7px 14px !important;
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+    background-color: var(--text-primary) !important;
+    color: #FAF7F2 !important;
+    border-radius: 99px !important;
+    box-shadow: 0 3px 10px rgba(28, 25, 23, 0.15) !important;
+    text-decoration: none !important;
+  }
+
+  .header-actions .btn-primary svg {
+    width: 14px !important;
+    height: 14px !important;
+    fill: #25D366 !important; /* Icona WhatsApp verde brillante elegante */
+  }
+
+  .hero-section {
+    padding-top: 32px !important;
+  }
+}
