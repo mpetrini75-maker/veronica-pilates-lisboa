@@ -3592,3 +3592,67 @@ html, body {
     font-size: 0.85rem !important;
   }
 }
+
+/* ==========================================================================
+   STICKY HEADER FIX ON MOBILE (VERONICA SALA + WHATSAPP ALWAYS VISIBLE ON TOP)
+   ========================================================================== */
+.site-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  background-color: rgba(250, 247, 242, 0.98) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border-bottom: 1px solid var(--border-light) !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03) !important;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 8px 0 !important;
+  }
+  .header-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .brand-logo {
+    display: flex !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+  }
+  .logo-title {
+    font-size: 1.25rem !important;
+    letter-spacing: 0.1em !important;
+    line-height: 1.1 !important;
+  }
+  .logo-subtitle {
+    font-size: 0.6rem !important;
+    letter-spacing: 0.2em !important;
+    line-height: 1 !important;
+    margin-top: 2px !important;
+  }
+  .header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+  .header-actions .btn-primary {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    padding: 6px 12px !important;
+    font-size: 0.78rem !important;
+    background-color: var(--accent-terra) !important;
+    color: #FFFFFF !important;
+    border-radius: 99px !important;
+  }
+  .header-actions .btn-primary svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  .hero-section {
+    padding: 24px 0 28px !important; /* Ridotto per non avere spazio vuoto sotto l'header sticky */
+  }
+}

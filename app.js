@@ -1339,3 +1339,13 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtn.addEventListener('click', () => modal.classList.remove('open'));
   }
 });
+
+// Scroll to top fix on mobile load
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash === '#hero' || window.location.hash === '') {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    if (window.location.hash === '#hero') {
+      history.replaceState(null, null, ' ');
+    }
+  }
+});
