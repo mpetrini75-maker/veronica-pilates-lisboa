@@ -4380,3 +4380,88 @@ body {
     color: var(--accent-terra) !important;
   }
 }
+
+/* ==========================================================================
+   MOBILE ANNOUNCEMENT BAR & SUBPAGE HEADER ACTIONS PERFECT FIT (v15.0)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .announcement-bar {
+    height: 34px !important;
+    padding: 0 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .announcement-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 4px !important;
+    padding: 0 !important;
+  }
+
+  .announcement-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    font-size: 0.68rem !important;
+    font-weight: 600 !important;
+    color: #FAF7F2 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+  }
+
+  .pulse-dot {
+    width: 6px !important;
+    height: 6px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .lang-switcher {
+    display: inline-flex !important;
+    flex-shrink: 0 !important;
+    gap: 2px !important;
+  }
+
+  .lang-btn {
+    padding: 2px 4px !important;
+    font-size: 0.64rem !important;
+    font-weight: 700 !important;
+    border-radius: 3px !important;
+    min-width: 22px !important;
+    text-align: center !important;
+  }
+
+  /* Subpage Header Actions Mobile Alignment */
+  .subpage-body .header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+
+  .subpage-body .back-home-nav-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 6px 10px !important;
+    font-size: 0.74rem !important;
+    font-weight: 600 !important;
+    border-radius: 99px !important;
+  }
+
+  .subpage-body .header-actions .btn-primary {
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 6px 12px !important;
+    font-size: 0.76rem !important;
+    font-weight: 700 !important;
+    border-radius: 99px !important;
+  }
+}

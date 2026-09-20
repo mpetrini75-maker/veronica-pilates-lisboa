@@ -27,7 +27,7 @@ const i18n = {
     "mob_shop": "Shop",
     "audio_ambient_flag": "Estratto Audio Reale da Podcast Professionale (Demo)",
     // Navigation & Common
-    "announcement_text": "Aperte le prenotazioni per le sessioni private a Lisbona (Matwork, Reformer e a Domicilio)",
+    "announcement_text": "Inscrições abertas em Lisboa",
     "nav_about": "Chi Sono",
     "nav_method": "Il Metodo",
     "nav_services": "Sessioni",
@@ -372,7 +372,7 @@ const i18n = {
   "en": {
     "audio_ambient_flag": "Genuine Pilates Podcast Broadcast Sample (Demo)",
     // Navigation & Common
-    "announcement_text": "Now Booking Autumn Private Sessions in Lisbon (Matwork, Reformer & In-Home)",
+    "announcement_text": "Inscrições abertas em Lisboa",
     "nav_about": "About",
     "nav_method": "The Method",
     "nav_services": "Sessions",
@@ -717,7 +717,7 @@ const i18n = {
   "de": {
     "audio_ambient_flag": "Echter Pilates-Podcast Audioausschnitt (Demo)",
     // Navigation & Common
-    "announcement_text": "Jetzt buchbar: Herbst-Privatlektionen in Lissabon (Matwork, Reformer & Hausbesuche)",
+    "announcement_text": "Inscrições abertas em Lisboa",
     "nav_about": "Über mich",
     "nav_method": "Die Methode",
     "nav_services": "Lektionen",
@@ -916,7 +916,7 @@ const i18n = {
   "pt": {
     "audio_ambient_flag": "Amostra Real de Podcast de Pilates (Demo)",
     // Navigation & Common
-    "announcement_text": "Inscrições abertas para sessões privadas em Lisboa (Matwork, Reformer e ao Domicílio)",
+    "announcement_text": "Inscrições abertas em Lisboa",
     "nav_about": "Sobre Mim",
     "nav_method": "O Método",
     "nav_services": "Sessões",
