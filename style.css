@@ -1,3 +1,9 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
 /* ==========================================================================
    VERONICA SALA — PILATES & MOVEMENT ARCHITECTURE
    Luxury Editorial Design System (Vanilla CSS)
@@ -2989,5 +2995,257 @@ input:focus, select:focus, textarea:focus {
 @media (min-width: 769px) {
   .mobile-swipe-hint {
     display: none !important;
+  }
+}
+
+
+/* ==========================================================================
+   PIXEL-PERFECT MOBILE OPTIMIZATION (STRICT OVERFLOW & COMPACT UI)
+   ========================================================================== */
+
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px !important; /* Clearance for fixed bottom bar */
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* RESET ALL NEGATIVE POSITIONING TO PREVENT COVERING IMAGES & HORIZONTAL OVERFLOW */
+  .visual-badge,
+  .visual-quote-card,
+  .about-card-float {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 12px 0 0 0 !important;
+  }
+
+  /* About Section Photo & Card Fix (NO MORE BLACK BOX OVER VERONICA PHOTO) */
+  .about-images {
+    display: flex !important;
+    flex-direction: column !important;
+    position: static !important;
+  }
+  .about-img-main {
+    width: 100% !important;
+    aspect-ratio: 4/5 !important;
+    border-radius: var(--radius-lg) !important;
+    overflow: hidden !important;
+  }
+  .about-card-float {
+    background-color: var(--bg-surface-white) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-light) !important;
+    border-left: 4px solid var(--accent-sage-dark) !important;
+    box-shadow: var(--shadow-sm) !important;
+    padding: 16px 14px !important;
+    border-radius: var(--radius-md) !important;
+  }
+  .about-card-float h4 {
+    color: var(--text-primary) !important;
+    font-size: 1.05rem !important;
+    margin: 4px 0 6px !important;
+  }
+  .about-card-float p {
+    color: var(--text-secondary) !important;
+    font-size: 0.8rem !important;
+    line-height: 1.4 !important;
+  }
+  .about-card-float .float-icon svg {
+    stroke: var(--accent-sage-dark) !important;
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  /* Hero Visual & Quote Fix */
+  .visual-card {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .visual-img-container {
+    width: 100% !important;
+    aspect-ratio: 4/5 !important;
+    border-radius: var(--radius-lg) !important;
+  }
+  .visual-badge {
+    margin-bottom: 12px !important;
+    margin-top: 0 !important;
+  }
+  .visual-quote-card {
+    background-color: var(--bg-surface-white) !important;
+    padding: 14px 16px !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  /* Compact Hero */
+  .hero-section {
+    padding: 70px 0 20px !important;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .hero-title {
+    font-size: 2.1rem !important;
+    line-height: 1.15 !important;
+    margin-bottom: 10px !important;
+  }
+  .hero-lead {
+    font-size: 0.88rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 16px !important;
+  }
+  .hero-cta-group {
+    flex-direction: column !important;
+    gap: 8px !important;
+    margin-bottom: 18px !important;
+  }
+  .hero-cta-group .btn {
+    width: 100% !important;
+    padding: 10px 14px !important;
+    font-size: 0.85rem !important;
+  }
+  .hero-credentials {
+    padding: 10px 6px !important;
+  }
+  .cred-num {
+    font-size: 1.15rem !important;
+  }
+  .cred-label {
+    font-size: 0.62rem !important;
+  }
+
+  /* Trust Strip */
+  .trust-strip {
+    padding: 14px 0 !important;
+  }
+  .trust-logos {
+    gap: 8px !important;
+    justify-content: center !important;
+  }
+  .trust-badge {
+    font-size: 0.72rem !important;
+    padding: 4px 10px !important;
+  }
+
+  /* Compact Sections */
+  section {
+    padding: 36px 0 !important;
+  }
+  .section-title {
+    font-size: 1.7rem !important;
+    margin-bottom: 6px !important;
+  }
+  .section-subtitle {
+    font-size: 0.82rem !important;
+    margin-bottom: 14px !important;
+  }
+
+  /* Bento Grid */
+  .bento-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+  .bento-card {
+    padding: 12px 10px !important;
+  }
+  .bento-title {
+    font-size: 0.88rem !important;
+  }
+  .bento-desc {
+    font-size: 0.74rem !important;
+  }
+
+  /* Horizontal Swipe Carousels (Smooth & Overflow Locked) */
+  .sessions-grid,
+  .rates-grid,
+  .eco-grid,
+  .testimonials-grid,
+  .gallery-grid {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 12px !important;
+    padding: 4px 0 14px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .session-card,
+  .rate-card,
+  .eco-card,
+  .testimonial-card {
+    flex: 0 0 82vw !important;
+    max-width: 300px !important;
+    scroll-snap-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Bottom Bar Perfectly Centered with 5 Equal Columns */
+  .mobile-bottom-bar {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 2px !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    box-sizing: border-box !important;
+    background: rgba(253, 251, 247, 0.96) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-top: 1px solid var(--border-light) !important;
+    padding: 6px 2px calc(6px + env(safe-area-inset-bottom)) !important;
+    z-index: 99999 !important;
+  }
+
+  .mobile-bar-btn {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2px !important;
+    padding: 4px 1px !important;
+    font-size: 0.6rem !important;
+    font-weight: 600 !important;
+    color: var(--text-secondary) !important;
+    text-decoration: none !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  .mobile-bar-btn svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .mobile-bar-btn.btn-highlight {
+    background-color: var(--accent-terra) !important;
+    color: #FFFFFF !important;
+    border-radius: 99px !important;
+    padding: 4px 6px !important;
+  }
+  .mobile-bar-btn.btn-highlight svg {
+    stroke: #FFFFFF !important;
   }
 }
