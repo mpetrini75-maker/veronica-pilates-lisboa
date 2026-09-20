@@ -3656,3 +3656,67 @@ html, body {
     padding: 24px 0 28px !important; /* Ridotto per non avere spazio vuoto sotto l'header sticky */
   }
 }
+
+/* ==========================================================================
+   CLEAN INTEGRATED CARD BADGE & SHOP IMAGES (v8.2)
+   ========================================================================== */
+.card-badge-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  align-self: flex-start !important;
+  background-color: var(--accent-sage-dark) !important;
+  color: #FFFFFF !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  padding: 6px 14px !important;
+  border-radius: 99px !important;
+  margin-bottom: 14px !important;
+  box-shadow: 0 2px 8px rgba(79, 97, 82, 0.25) !important;
+  position: static !important; /* Non piu absolute sbordante */
+}
+
+/* Fix per evitare sbavature o tagli di badge su mobile */
+.session-card {
+  padding-top: 24px !important;
+}
+
+/* Stili per immagini reali shop */
+.product-img-box {
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  background-color: var(--bg-surface-soft) !important;
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.product-real-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.product-card:hover .product-real-img {
+  transform: scale(1.05) !important;
+}
+
+.product-badge-flag {
+  position: absolute !important;
+  top: 14px !important;
+  left: 14px !important;
+  z-index: 2 !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  color: var(--accent-terra) !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  padding: 5px 12px !important;
+  border-radius: 99px !important;
+  border: 1px solid rgba(194, 116, 92, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
