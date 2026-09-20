@@ -5,7 +5,7 @@
 
 const i18n = {
   "it": {
-    "audio_ambient_flag": "Anteprima Sottofondo Studio (In attesa della registrazione vocale di Veronica)",
+    "audio_ambient_flag": "Estratto Audio Reale da Podcast Professionale (Demo)",
     // Navigation & Common
     "announcement_text": "Aperte le prenotazioni per le sessioni private a Lisbona (Matwork, Reformer e a Domicilio)",
     "nav_about": "Chi Sono",
@@ -350,7 +350,7 @@ const i18n = {
   },
 
   "en": {
-    "audio_ambient_flag": "Studio Ambient Preview (Veronica voice masterclass recording soon)",
+    "audio_ambient_flag": "Genuine Pilates Podcast Broadcast Sample (Demo)",
     // Navigation & Common
     "announcement_text": "Now Booking Autumn Private Sessions in Lisbon (Matwork, Reformer & In-Home)",
     "nav_about": "About",
@@ -695,7 +695,7 @@ const i18n = {
   },
 
   "de": {
-    "audio_ambient_flag": "Studio-Ambient Vorschau (Veronicas Sprachaufnahme folgt in Kürze)",
+    "audio_ambient_flag": "Echter Pilates-Podcast Audioausschnitt (Demo)",
     // Navigation & Common
     "announcement_text": "Jetzt buchbar: Herbst-Privatlektionen in Lissabon (Matwork, Reformer & Hausbesuche)",
     "nav_about": "Über mich",
@@ -894,7 +894,7 @@ const i18n = {
   },
 
   "pt": {
-    "audio_ambient_flag": "Amostra Ambiente de Estúdio (Gravação de voz da Veronica em breve)",
+    "audio_ambient_flag": "Amostra Real de Podcast de Pilates (Demo)",
     // Navigation & Common
     "announcement_text": "Inscrições abertas para sessões privadas em Lisboa (Matwork, Reformer e ao Domicílio)",
     "nav_about": "Sobre Mim",
