@@ -5,6 +5,11 @@
 
 const i18n = {
   "it": {
+    "swipe_hint": "Scorri le schede orizzontalmente",
+    "mob_home": "Home",
+    "mob_book": "Prenota",
+    "mob_pod": "Podcast",
+    "mob_shop": "Shop",
     "audio_ambient_flag": "Estratto Audio Reale da Podcast Professionale (Demo)",
     // Navigation & Common
     "announcement_text": "Aperte le prenotazioni per le sessioni private a Lisbona (Matwork, Reformer e a Domicilio)",
