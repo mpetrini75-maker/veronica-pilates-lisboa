@@ -3864,3 +3864,69 @@ html, body {
     padding-top: 24px !important;
   }
 }
+
+/* ==========================================================================
+   UNIFIED SESSION BUTTONS & CLICK FEEDBACK (v10.1)
+   ========================================================================== */
+.session-card .card-footer {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 14px !important;
+  padding-top: 20px !important;
+  border-top: 1px solid var(--border-light) !important;
+  margin-top: auto !important;
+}
+
+.session-card .btn-session-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 12px 20px !important;
+  font-family: var(--font-sans) !important;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  border-radius: 99px !important;
+  background-color: var(--text-primary) !important;
+  color: #FAF7F2 !important;
+  border: 1px solid transparent !important;
+  box-shadow: 0 4px 14px rgba(28, 25, 23, 0.12) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.session-card .btn-session-cta:hover {
+  background-color: var(--accent-terra) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) scale(1.03) !important;
+  box-shadow: 0 6px 20px rgba(194, 116, 92, 0.35) !important;
+}
+
+/* Micro-interazione al click / tap: espansione visibile (feedback tattile) */
+.session-card .btn-session-cta:active,
+.session-card .btn-session-cta:focus {
+  transform: scale(1.08) !important;
+  background-color: var(--accent-terra) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 8px 24px rgba(194, 116, 92, 0.45) !important;
+  transition: transform 0.08s ease !important;
+}
+
+@media (max-width: 768px) {
+  .session-card .card-footer {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding-top: 16px !important;
+  }
+  .session-card .btn-session-cta {
+    padding: 10px 16px !important;
+    font-size: 0.82rem !important;
+  }
+}
